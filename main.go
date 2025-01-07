@@ -79,7 +79,7 @@ func signUp(c *gin.Context) {
 
 	for _, u := range users {
 		if u.Login == request.Login {
-			c.IndentedJSON(http.StatusBadRequest, gin.H{"error": "Login already exists"})
+			c.IndentedJSON(http.StatusBadRequest, gin.H{"error": "Login already exists!"})
 			return
 		}
 	}
